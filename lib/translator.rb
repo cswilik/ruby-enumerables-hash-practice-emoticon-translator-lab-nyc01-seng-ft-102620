@@ -18,7 +18,7 @@ def get_english_meaning(file_path, emoticon)
   emotions = load_library(file_path)
   emotions.each do |key, value|
     if emotions[key][:japanese] == emoticon 
-      return emotions[key]
+      return key
       binding.pry
     end 
     # binding.pry
