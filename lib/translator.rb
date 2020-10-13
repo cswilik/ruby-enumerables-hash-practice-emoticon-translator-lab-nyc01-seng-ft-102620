@@ -9,8 +9,8 @@ def load_library(file_path)
   file_path.each_with_object({}) do |(key, value), final_array|
     value.each do |emoticon|
       if emoticon.odd?
-        puts emoticon
         binding.pry
+        puts emoticon
       end 
     end 
   end 
