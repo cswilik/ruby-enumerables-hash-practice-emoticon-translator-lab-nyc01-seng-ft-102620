@@ -10,6 +10,7 @@ def load_library(file_path)
     # binding.pry
     final_array[key] = { } 
     value.each do |emoticon|
+      value[]
       binding.pry
     end 
   end 
