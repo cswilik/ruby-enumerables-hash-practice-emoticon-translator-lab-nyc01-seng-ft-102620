@@ -17,6 +17,7 @@ end
 def get_english_meaning(file_path, emoticon)
   emotions = load_library(file_path)
   emotions.each do |key, value|
+    if value.include
     binding.pry
   end 
 end
