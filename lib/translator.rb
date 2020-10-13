@@ -28,8 +28,8 @@ def get_japanese_emoticon(file_path, emoticon)
   emotions = load_library(file_path)
   binding.pry
   emotions.each do |key, value| 
-    if emotions[key][:japanese] == emoticon
-      return emotions[key][:english]
+    if emotions[key][:english] == emoticon
+      return emotions[key][:japanese]
     end 
   end 
   return "Sorry, that emoticon was not found"
