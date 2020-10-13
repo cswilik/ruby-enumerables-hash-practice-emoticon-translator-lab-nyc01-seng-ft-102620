@@ -15,10 +15,10 @@ def load_library(file_path)
 end
 
 def get_english_meaning(file_path, emoticon)
-  load_library(file_path)
-  
-  # binding.pry
-  
+  emotions = load_library(file_path)
+  emotions.each do |key, value|
+    binding.pry
+  end 
 end
 
 def get_japanese_emoticon
