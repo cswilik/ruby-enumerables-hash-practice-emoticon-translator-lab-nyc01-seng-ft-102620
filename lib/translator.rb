@@ -7,6 +7,7 @@ require 'pry'
 def load_library(file_path)
   file_path = YAML.load_file('lib/emoticons.yml')
   file_path.each_with_object({}) do |(key, value), final_array|
+    final_array[key] = {} 
     value.each do |emoticon|
       final_array[key][]
     end 
